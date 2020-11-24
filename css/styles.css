@@ -23,7 +23,7 @@ img {
 }
 
 .feature-cards,
-.services-container ul,
+.service-cards,
 .team-container ul,
 .regular-customers-container ul {
   display: flex;
@@ -262,18 +262,33 @@ img {
   width: 270px;
 }
 
+/* Section titles */
+
+.section-titles {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
 /* Services section */
 
-.services-container {
+.services {
   background: #ffffff;
   padding-bottom: 94px;
 }
 
-.services-thumb {
+.service-cards__thumb {
   position: relative;
 }
 
-.services-title {
+.service-cards__title {
   position: absolute;
   bottom: 0%;
   width: 100%;
@@ -293,18 +308,7 @@ img {
   color: #ffffff;
 }
 
-.section-titles {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin-top: 0px;
-  margin-bottom: 50px;
-}
+/* Team section */
 
 .team-container {
   background: #f5f4fa;
