@@ -1,5 +1,7 @@
+/* Base Styles*/
+
 ul {
-  list-style-type: none; /* Убираем маркеры */
+  list-style-type: none;
   margin: 0px;
   padding: 0px;
 }
@@ -28,12 +30,24 @@ img {
   justify-content: space-between;
 }
 
+/* Page header */
+
 .page-head {
   padding-top: 25px;
   padding-bottom: 25px;
   background: #ffffff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
+
+/* Page header and main navigation containers */
+
+.page-head__container,
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo */
 
 .logo {
   font-family: Raleway, sans-serif;
@@ -48,11 +62,13 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.part-logo-web {
+.logo__part-web {
   color: #2196f3;
 }
 
-.site-nav {
+/* Page navigation */
+
+.page-navigation {
   display: flex;
   margin-left: 93px;
   font-family: "Roboto", sans-serif;
@@ -63,22 +79,21 @@ img {
   letter-spacing: 0.02em;
 }
 
-.site-nav .item:not(:last-child) {
+.page-navigation__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav-link {
+.page-navigation__link {
   position: relative;
   display: block;
   color: #212121;
   padding-top: 10px;
   padding-bottom: 10px;
-
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-active::after {
+.page-navigation__link--is-active::after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -92,7 +107,7 @@ img {
   opacity: 1;
 }
 
-.header-address-container {
+.address {
   display: flex;
   margin-left: auto;
   font-family: "Roboto", sans-serif;
@@ -103,29 +118,20 @@ img {
   letter-spacing: 0.02em;
 }
 
-.header-address-link {
+.address__link {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #757575;
-}
-
-.address-link {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-address-link:not(:last-child) {
+.address__link:not(:last-child) {
   margin-right: 30px;
 }
 
-.header-menu,
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-
-.address-icon {
+.address__icon {
   margin-right: 10px;
   fill: #757575;
 
@@ -868,20 +874,20 @@ img {
   outline-color: #2196f3;
 }
 
-.site-nav-link:hover,
-.site-nav-link:focus {
+.page-navigation__link:hover,
+.page-navigation:focus {
   color: #2196f3;
   outline-color: #2196f3;
 }
 
-.address-link:hover,
-.address-link:focus {
+.address__link:hover,
+.address__link:focus {
   color: #2196f3;
   outline-color: #2196f3;
 }
 
-.address-link:hover .address-icon,
-.address-link:focus .address-icon {
+.address__link:hover .address__icon,
+.address__link:focus .address__icon {
   fill: #2196f3;
 }
 
