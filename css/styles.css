@@ -24,7 +24,7 @@ img {
 
 .feature-cards,
 .service-cards,
-.team-container ul,
+.team ul,
 .regular-customers-container ul {
   display: flex;
   justify-content: space-between;
@@ -310,7 +310,7 @@ img {
 
 /* Team section */
 
-.team-container {
+.team {
   background: #f5f4fa;
   padding: 94px 0px;
 }
@@ -328,36 +328,35 @@ img {
   width: 270px;
 }
 
-.employee-card-description {
+.employee-card__thumb {
   padding: 30px 32px;
 }
 
-.title-employee-card {
+.employee-card__title {
   font-weight: 500;
   color: #212121;
   margin-top: 0px;
   margin-bottom: 10px;
 }
 
-.employee-position {
+.employee-card__text {
   font-weight: normal;
   color: #757575;
   margin-top: 0px;
   margin-bottom: 16px;
 }
 
-.social-icons-item {
+.social-networks {
   width: 44px;
   height: 44px;
   padding: 12px;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.1);
-
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icon {
+.social-networks__icon {
   fill: #afb1b8;
   width: 20px;
   height: 20px;
@@ -902,8 +901,8 @@ img {
   fill: #2196f3;
 }
 
-.button-order-service:hover,
-.button-order-service:focus {
+.page-hero__button:hover,
+.page-hero__button:focus {
   background-color: #ffffff;
   color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -921,20 +920,14 @@ img {
   outline: 0px;
 }
 
-.project-card:hover,
-.project-card:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.social-icons-item:hover,
-.social-icons-item:focus {
+.social-networks:hover,
+.social-networks:focus {
   background-color: #2196f3;
   border-radius: 25px;
 }
 
-.social-icons-item:hover .social-icon,
-.social-icons-item:focus .social-icon {
+.social-networks:hover .social-networks__icon,
+.social-networks:focus .social-networks__icon {
   fill: #ffffff;
 }
 
@@ -946,6 +939,12 @@ img {
 .customer-card:hover,
 .customer-card:focus {
   border-color: #2196f3;
+}
+
+.project-card:hover,
+.project-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-link:hover .project-thumb::before,
