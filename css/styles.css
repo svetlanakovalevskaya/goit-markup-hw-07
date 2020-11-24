@@ -1,4 +1,4 @@
-/* Base Styles*/
+/* Base and general styles*/
 
 ul {
   list-style-type: none;
@@ -22,7 +22,7 @@ img {
   margin-right: auto;
 }
 
-.features-container ul,
+.feature-cards,
 .services-container ul,
 .team-container ul,
 .regular-customers-container ul {
@@ -197,7 +197,7 @@ img {
 
 /* Features section */
 
-.features-container {
+.features {
   background: #ffffff;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -205,7 +205,11 @@ img {
   padding: 94px 0px;
 }
 
-.feature-card::before {
+.features__title {
+  display: none;
+}
+
+.feature-cards__item::before {
   content: "";
   display: block;
   width: 270px;
@@ -238,11 +242,7 @@ img {
   background-size: 70px 70px;
 }
 
-.title-features {
-  display: none;
-}
-
-.title-paragraph-features {
+.feature-cards__title {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
@@ -252,7 +252,7 @@ img {
   margin-bottom: 10px;
 }
 
-.text-paragraph-features {
+.feature-cards__text {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
@@ -261,6 +261,8 @@ img {
   margin-bottom: 0px;
   width: 270px;
 }
+
+/* Services section */
 
 .services-container {
   background: #ffffff;
