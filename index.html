@@ -318,41 +318,41 @@
    
     <footer class="footer">
       <div class="container" id="contacts">
-        <div class="life-address">
-          <a href="index.html" class="logo logo-footer"><span class="logo__part-web">Web</span>Studio</a>
-          <address class="post-address">г. Киев, пр-т Леси Украинки, 26</address>
-          <address class="footer-address-container">
-            <a href="mailto:info@example.com" class="footer-address-link address-link">info@example.com<br></a>
-            <a href="tel:+380991111111" class="footer-address-link address-link">+38 099 111 11 11</a>
+        <div class="footer__contacts-widget">
+          <a href="index.html" class="logo footer__logo"><span class="logo__part-web">Web</span>Studio</a>
+          <address class="footer__post-address">г. Киев, пр-т Леси Украинки, 26</address>
+          <address class="footer__address">
+            <a href="mailto:info@example.com" class="footer__address-link">info@example.com<br></a>
+            <a href="tel:+380991111111" class="footer__address-link">+38 099 111 11 11</a>
           </address>
         </div>
-        <div class="social-networks-container">
-          <p class="footer-titles">Присоединяйтесь</p>
-          <ul class="social-networks-list">
-            <li class="social-icons-item">
+        <div class="footer__social-networks-widget">
+          <p class="footer__title">Присоединяйтесь</p>
+          <ul class="footer__social-networks-list">
+            <li class="social-networks">
               <a href="http://instagram.com/" target="_blank" rel="noopener noreferer" aria-label="Instagram">
-                <svg class="social-icon social-icon-footer" width="16" height="12">
+                <svg class="social-networks__icon social-networks__icon--white" width="16" height="12">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-icons-item">
+            <li class="social-networks">
               <a href="https://twitter.com/" target="_blank" rel="noopener noreferer" aria-label="Twitter">
-                <svg class="social-icon social-icon-footer" width="16" height="12">
+                <svg class="social-networks__icon social-networks__icon--white" width="16" height="12">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-icons-item">
+            <li class="social-networks">
               <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferer" aria-label="Facebook">
-                <svg class="social-icon social-icon-footer" width="16" height="12">
+                <svg class="social-networks__icon social-networks__icon--white" width="16" height="12">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-icons-item">
+            <li class="social-networks">
               <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferer" aria-label="Linkedin">
-                <svg class="social-icon social-icon-footer" width="16" height="12">
+                <svg class="social-networks__icon social-networks__icon--white" width="16" height="12">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -360,15 +360,16 @@
           </ul>
         </div>
 
-        <form class="contact-form-container" action="" method="POST">
-          <label class="footer-titles" for="subscribe">Подпишитесь на рассылку</label>
-          <div class="subscribe-input-button">
-            <input class="email-input" type="email" name="email" placeholder="E-mail" id="subscribe" />
+        <form class="footer__subscribe-form-widget" action="" method="POST">
+          <label class="footer__title" for="subscribe">Подпишитесь на рассылку</label>
+          <div class="subscribe-form">
+            <input class="subscribe-form__input" type="email" name="email" placeholder="E-mail" id="subscribe" />
             <button class="subscribe-button" type="submit">
-                Подписаться
-                <svg class="subscribe-button-icon" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#icon-send"></use>
-                </svg>
+              Подписаться
+              <!--<span class="subscribe-button-text">Подписаться</span>-->
+              <svg class="subscribe-button__icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
             </button>
           </div>
         </form>
