@@ -6,10 +6,21 @@
   background-color: $networkIconBgColor;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-network:not(:last-child) {
-  margin-right: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $accentElementColor;
+    border-radius: 25px;
+  }
+
+  &:hover .social-network__icon,
+  &:focus .social-network__icon {
+    fill: $primaryColor;
+  }
 }
 
 .social-network__icon {
@@ -18,19 +29,8 @@
   height: 20px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-network__icon--white {
-  fill: $primaryColor;
-}
-
-.social-network:hover,
-.social-network:focus {
-  background-color: $accentElementColor;
-  border-radius: 25px;
-}
-
-.social-network:hover .social-network__icon,
-.social-network:focus .social-network__icon {
-  fill: $primaryColor;
+  &--white {
+    fill: $primaryColor;
+  }
 }
